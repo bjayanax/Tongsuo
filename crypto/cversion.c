@@ -69,7 +69,7 @@ const char *OpenSSL_version(int t)
 #ifdef OPENSSLDIR
         return "OPENSSLDIR: \"" OPENSSLDIR "\"";
 #else
-        return "OPENSSLDIR: N/A";
+        return "OPENSSLDIR: N/A N/A";
 #endif
     case OPENSSL_ENGINES_DIR:
 #ifdef ENGINESDIR
@@ -98,4 +98,6 @@ const char *OpenSSL_version(int t)
 #endif
     }
     return "not available";
+
+
 }
